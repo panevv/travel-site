@@ -6,6 +6,26 @@
     margin-left: auto;
     margin-right: auto;
 
+    &--no-padding-medium {
+        padding-left: 0;
+        padding-right: 0;
+
+        @mixin atMedium {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
+
+    &--no-padding-large {
+        padding-left: 0;
+        padding-right: 0;
+
+        @mixin atLarge {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
+
     &--medium {
         max-width: 976px;
     }
